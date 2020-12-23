@@ -12,7 +12,6 @@ client.on('message', msg => {
     if (msg.author.id != client.user.id) {
         msg.channel.send(msg.content.split('').reverse().join(''));
     }
-    msg.channel.send(msg.content.split('').reverse().join(''));
 });
 
 client.login(token);
